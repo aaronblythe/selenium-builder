@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Selenium Builder",
+    "version": "3.1.2",
+    "description": "Create automated cross-browser functional tests easily and quickly.",
+    "homepage_url": "http://seleniumbuilder.github.io/se-builder/",
+    "icons": {
+      "48": "content/html/img/sb_logo_med.png"
+    },
+    "developer": {
+        "name": "David Stark"
+    },
+  
+    "page_action": {
+      "default_icon": "content/html/img/sb_logo_med.png",
+      "default_title": "Selenium Builder"
+    },
+  
+    "browser_action": {
+      "browser_style": true,
+      "default_area": "navbar",
+      "default_icon": {
+        "16": "content/html/img/sb_logo_med.png",
+        "32": "content/html/img/sb_logo_med.png"
+      },
+      "default_title": "Selenium Builder",
+      "default_popup": "content/html/menu.html"
+    }
+  }

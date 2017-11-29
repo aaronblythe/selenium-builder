@@ -1,37 +1,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <meta charset="utf-8">
   <script src="lib/jquery-3.1.0.min.js"></script>
   <script src="lib/jquery.csv-0.71.min.js"></script>
   <script src="lib/jquery-ui.min.js"></script>
   <script src="lib/cssQuery-noeval.js"></script>
-  <script type="text/javascript">
-    window.boot = function(sebuilder) {
-      window.stayAlive = true;
-      window.sebuilder = sebuilder;
-      window.bridge = sebuilder;
-      var bridge = sebuilder;
-      
-      // Load the loader script!
-      var script = document.createElement('script');
-      script.setAttribute('type', 'text/javascript');
-      // Force no caching. This means the user always gets an up to date recorder.
-      script.setAttribute('src', "loader.js?" + Math.random());
-      // Above line may not work due to security reasons, so let's try a different
-      // way too.
-      document.getElementsByTagName('head')[0].appendChild(script);
-    };
-    
-    // If we haven't been told by sebuilder.boot to stay open, we are probably an orphaned window left
-    // over from the previous session, so we close. 
-    window.assumeDeadBy = setTimeout(function() {
-      if (!window.stayAlive) {
-        window.close();
-      }
-    }, 500);
-  </script>
+  <script src="boot.js"></script>
   <link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.7.custom.css"></link>
   <link rel="stylesheet" type="text/css" href="css/gui.css"></link>
-  <meta charset="utf-8">
+
   <title>Selenium Builder</title>
 </head>
 
